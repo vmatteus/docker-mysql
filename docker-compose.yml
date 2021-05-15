@@ -15,3 +15,7 @@ services:
     volumes:
       - ./volume/mysql:/var/lib/mysql
       - ./volume/data:/var/data
+networks:
+  genial:
+    external: true
+    name: genial
