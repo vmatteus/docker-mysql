@@ -1,21 +1,21 @@
 version: "2"
 services:
-  genial-mysql:
-    container_name: genial-mysql
+  inside-mysql:
+    container_name: inside-mysql
     build: .
     expose:
       - "3306"
     ports:
       - "23306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=genial
-      - MYSQL_DATABASE=genial
-      - MYSQL_USER=genial
-      - MYSQL_PASSWORD=genial
+      - MYSQL_ROOT_PASSWORD=inside
+      - MYSQL_DATABASE=inside
+      - MYSQL_USER=inside
+      - MYSQL_PASSWORD=inside
     volumes:
       - ./volume/mysql:/var/lib/mysql
       - ./volume/data:/var/data
 networks:
-  genial:
+  inside:
     external: true
-    name: genial
+    name: inside
