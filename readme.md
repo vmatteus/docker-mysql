@@ -1,6 +1,6 @@
-# Setup Genial - Mysql
+# Setup Inside - Mysql
 
-Ambiente recomendado para ser utilizado como base de dados para todos os sistemas da Genial Ideias
+Ambiente recomendado para ser utilizado como base de dados para todos os sistemas da Inside
 
 ### Pré-requisitos:
 Para trabalhar nesse projeto você ira precisar instalar:
@@ -16,7 +16,7 @@ Crie uma rede docker chamada genial para que todos os sistemas do ambiente Genia
     docker network ls
 
     //Criando a rede
-    docker network create -d bridge genial
+    docker network create -d bridge inside
 
 Subindo o ambiente docker:
     docker-compose up -d
