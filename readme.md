@@ -12,7 +12,7 @@ Para trabalhar nesse projeto você ira precisar instalar:
 
 Crie uma rede docker chamada inside para que todos os sistemas do ambiente inside utilizem a mesma rede
 
-    //verifique se a rede genial já existe se a rede não existir execute o comando para criação da rede.
+    //verifique se a rede inside já existe se a rede não existir execute o comando para criação da rede.
     docker network ls
 
     //Criando a rede
